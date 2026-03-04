@@ -9,7 +9,8 @@ const cors=require ('cors')
 
 app.use(
   cors({
-    origin: "https://resumeded.onrender.com",
+    origin: 'https://resumehello.onrender.com', // <- frontend origin
+    credentials: true, // if you use cookies or authentication headers
   })
 );
 
