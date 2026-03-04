@@ -7,7 +7,11 @@ const router = require('./Routes/user')
 
 const cors=require ('cors')
 
-app.use(cors())
+app.use(
+  cors({
+    origin: "https://resumeded.onrender.com",
+  })
+);
 
 app.use(express.json())
 app.use("/files", express.static("uploads"));
