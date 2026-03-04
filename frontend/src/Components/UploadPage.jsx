@@ -63,7 +63,7 @@ const UploadPage = () => {
       const formData = new FormData();
       formData.append("resume", file); // must match upload.single("resume")
 
-      const response = await axios.post("http://localhost:5000/resume", formData, {
+      const response = await axios.post("https://resumeded.onrender.com/resume", formData, {
         headers: { "Content-Type": "multipart/form-data" },
         onUploadProgress: (evt) => {
           if (!evt.total) return;
