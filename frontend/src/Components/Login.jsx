@@ -34,7 +34,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        `${API_URL}/login`,
+        "https://resumeded.onrender.com/login",
         user
       );
 
