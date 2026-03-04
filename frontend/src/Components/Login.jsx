@@ -3,8 +3,8 @@ import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-// ✅ Production API URL from Render
-const API_URL = import.meta.env.VITE_API_URL;
+
+;
 
 const Login = () => {
   const navigate = useNavigate();
